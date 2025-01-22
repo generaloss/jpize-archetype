@@ -1,0 +1,27 @@
+<archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="jpize-archetype"
+        partial="false">
+
+  <requiredProperties>
+    <requiredProperty key="class-name">
+      <defaultValue>App</defaultValue>
+      <validationRegex>^[A-Z].*$</validationRegex>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" packaged="true">
+      <directory>src/main/java</directory>
+    </fileSet>
+
+    <fileSet filtered="false" packaged="false">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>icon.png</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
