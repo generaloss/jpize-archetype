@@ -4,12 +4,12 @@
 
   <groupId>io.github.generaloss</groupId>
   <artifactId>jpize-archetype</artifactId>
-  <version>25.1.1-SNAPSHOT-21</version>
+  <version>25.1.5-01</version>
   <name>jpize-archetype</name>
   <packaging>maven-archetype</packaging>
 
-  <description>an archetype with following libraries: jpize-utils, jpize-core, jpize-audio</description>
-  <url>https://github.com/generaloss/jpize-core</url>
+  <description>archetype with jpize libraries</description>
+  <url>https://github.com/generaloss/jpize-archetype</url>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -33,6 +33,7 @@
 
   <build>
     <extensions>
+      <!-- archetype packaging -->
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
         <artifactId>archetype-packaging</artifactId>
@@ -41,6 +42,7 @@
     </extensions>
     <pluginManagement>
       <plugins>
+        <!-- archetype plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-archetype-plugin</artifactId>
