@@ -1,35 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.generaloss</groupId>
   <artifactId>jpize-archetype</artifactId>
-  <version>25.1.5-01</version>
+  <version>25.1.5</version>
   <name>jpize-archetype</name>
   <packaging>maven-archetype</packaging>
 
   <description>archetype with jpize libraries</description>
   <url>https://github.com/generaloss/jpize-archetype</url>
 
-  <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <scm>
-    <connection>scm:git:git://github.com/generaloss/jpize-archetype.git</connection>
-    <developerConnection>scm:git:ssh://github.com:generaloss/jpize-archetype.git</developerConnection>
-    <url>https://github.com/generaloss/jpize-archetype/tree/master</url>
-  </scm>
-
-  <developers>
-    <developer>
-      <id>generaloss</id>
-      <name>Pavel Vladimirovich</name>
-      <email>generaloss@proton.me</email>
-    </developer>
-  </developers>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/generaloss/jpize-archetype</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <extensions>
@@ -62,24 +49,6 @@
             </execution>
           </executions>
         </plugin>
-        <!-- attach javadocs -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.8.0</version>
-          <executions>
-            <execution>
-              <id>attach-javadocs</id>
-              <goals>
-                <goal>jar</goal>
-              </goals>
-            </execution>
-          </executions>
-          <configuration>
-            <additionalOptions>-Xdoclint:none</additionalOptions>
-            <javadocExecutable>/usr/lib/jvm/java-17-openjdk/bin/javadoc</javadocExecutable>
-          </configuration>
-        </plugin>
         <!-- sign jar with gpg key -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -95,18 +64,6 @@
             </execution>
           </executions>
         </plugin>
-        <!-- deploy to maven central repository -->
-        <plugin>
-          <groupId>org.sonatype.central</groupId>
-          <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.3.0</version>
-          <extensions>true</extensions>
-          <configuration>
-            <publishingServerId>central</publishingServerId>
-            <tokenAuth>true</tokenAuth>
-          </configuration>
-        </plugin>
-
       </plugins>
     </pluginManagement>
   </build>
