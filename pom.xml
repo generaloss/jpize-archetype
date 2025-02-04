@@ -4,7 +4,7 @@
 
   <groupId>io.github.generaloss</groupId>
   <artifactId>jpize-archetype</artifactId>
-  <version>25.1.5</version>
+  <version>25.2.3</version>
   <name>jpize-archetype</name>
   <packaging>maven-archetype</packaging>
 
@@ -13,8 +13,8 @@
 
   <distributionManagement>
     <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/generaloss/jpize-archetype</url>
+      <id>archetype</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
   </distributionManagement>
 

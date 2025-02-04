@@ -11,19 +11,19 @@
     <dependency>
       <groupId>io.github.generaloss</groupId>
       <artifactId>jpize-utils</artifactId>
-      <version>25.1.5</version>
+      <version>25.2.3</version>
     </dependency>
     <!-- jpize-core -->
     <dependency>
       <groupId>io.github.generaloss</groupId>
       <artifactId>jpize-core</artifactId>
-      <version>25.1.5</version>
+      <version>25.2.3</version>
     </dependency>
     <!-- jpize-audio -->
     <dependency>
       <groupId>io.github.generaloss</groupId>
       <artifactId>jpize-audio</artifactId>
-      <version>24.12.8</version>
+      <version>25.2.3</version>
     </dependency>
   </dependencies>
 
