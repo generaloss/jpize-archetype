@@ -13,8 +13,8 @@
 
   <distributionManagement>
     <repository>
-      <id>archetype</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/generaloss/jpize-archetype</url>
     </repository>
   </distributionManagement>
 
