@@ -4,7 +4,7 @@
 
   <groupId>io.github.generaloss</groupId>
   <artifactId>jpize-archetype</artifactId>
-  <version>25.2.3</version>
+  <version>25.2.4</version>
   <name>jpize-archetype</name>
   <packaging>maven-archetype</packaging>
 
